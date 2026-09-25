@@ -16,7 +16,13 @@ body { background: var(--branco); color: var(--texto); font-family: Georgia, 'Ti
 img, video { max-width: 100%; }
 
 .hero { min-height: 720px; position: relative; overflow: hidden; color: var(--branco); background: var(--verde-profundo); }
-.hero-fundo { position: absolute; inset: 0; background: url("5.png") center / cover no-repeat; }
+.hero-fundo {
+    position: absolute;
+    inset: 0;
+    background: url("5.png") center 18% / cover no-repeat;
+    transform: scale(1.08);
+    transform-origin: center;
+}
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8, 35, 23, .92), rgba(8, 35, 23, .42) 58%, rgba(8, 35, 23, .08)); }
 .hero-container { position: relative; z-index: 1; width: min(1180px, calc(100% - 80px)); min-height: 720px; margin: auto; display: flex; align-items: center; }
 .hero-content { max-width: 680px; padding-top: 55px; }
